@@ -1,0 +1,42 @@
+.body {
+	width: 9.95rem;
+	height: 99.5vh;
+	position: relative;
+	margin: 0 auto;
+}
+.herder {
+	width: 100%;
+	height: 1.693333rem;
+	background-image: url(https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/3f00943bf04702405b8e8bc9f404a9f6.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.sp{
+	width:47%;
+	height: 6.56rem;
+	float: left;
+	margin-left:0.2rem;
+}
+.sp img{
+	width:100%;
+	height: 4.949333rem;
+}
+.sp span{
+	display: block;
+	float: left;
+}
+.sp span:nth-child(2){
+	width:100%;
+	font-size: 0.389333rem;
+	color: #3C3C3C;
+	overflow: hidden;
+}
+.sp span:nth-child(3){
+	font-size:0.346666rem;
+	margin-top:0.1rem;
+	color: #FF6700;
+}
+.sp span:nth-child(4){
+	font-size: 0.442666rem;
+	color: #FF6700;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport"
+			content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script src="../js/flexible.js"></script>
+		<link rel="shortcut icon" href="https://s02.mifile.cn/assets/static/image/logo-mi2.png" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="../css/public.css" />
+		<link rel="stylesheet" type="text/css" href="../css/address.css" />
+		<script src="../js/jquery.js"></script>
+		<script src="../js/address.js"></script>
+		<script type="text/javascript">
+		$(function(){
+			$(".herder").children().eq(0).click(function(){
+				window.location.href="javascript:history.go(-1)";
+			})
+			$(".dzgl").click(function(){
+				window.location.href="bjaddress.html"
+			})
+			$(".foot").click(function(){
+				window.location.href="newaddress.html"
+			})
+		})
+			
+		</script>
+		<title>地址</title>
+	</head>
+	<body>
+		<div class="body">
+			<div class="herder">
+				<div></div>
+				<div>收货地址</div>
+			</div>
+			<div class="address">
+				<div class="dzgl">
+					<span>张三</span>
+					<span>1888888888</span>
+					<span></span>
+					<span>删除</span>
+					<span>湖南</span>
+					<span>湘潭市</span>
+					<span>雨湖区</span>
+					<span>和平街道</span>
+					<span></span>
+					<span>九华创新创业中心</span>
+				</div>
+			</div>
+			<div class="foot">
+				+新建收货地址
+			</div>
+		</div>
+	</body>
+</html>

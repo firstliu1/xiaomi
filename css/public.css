@@ -1,0 +1,11 @@
+*{margin: 0; padding: 0;}
+a{
+	text-decoration: none;
+}
+body{
+	min-width:320px;
+	max-width: 750px;
+	width: 10rem;
+	line-height: 1.5;
+	margin:0 auto;
+}

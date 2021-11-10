@@ -1,0 +1,32 @@
+.body {
+	width: 9.95rem;
+	height: 99.5vh;
+	position: relative;
+	margin: 0 auto;
+	border: 0.01rem solid #D3D3D3;
+}
+.herder {
+	width: 100%;
+	height: 1.106666rem;
+	background-color: #F2F2F2;
+}
+.herder div:nth-child(1) {
+	width: 0.693333rem;
+	height: 0.693333rem;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAABfUlEQVR4AWL4//8/oH1zzA4gCMJgbNv239i2beP+R8gXczpmV79XB9ja3UEDDJCAIAQhCEF/TBAgCEEIUkSKFrEoahD0VFCdOLtmWxQh6E5Okzh7xCyC7n85T+lyL0jREJDT434NMr6cAde7mLHmXDDkfptX1AfkjPk+B9lyRn0fFO01Z8r9SVrRGJAzLaL9CrJ/q4XvlnPBX5IT4/qyqqgJyFkWcX5v8/aXsyKSXKc7FLUBORuGHAeC7K18y5DjQ5CiOiBnU6T6zSjav9WWSPebcrV3qz2R4Tcnba85hyLTb9Le/nL2RY7fqsbLcnJdl30MOSeiwG9dzD4hX1DitnCoSBDlhpwy15VVRY9YDvxWhd/xYAjiF2ORLnYviG3+45dTDopcNbisftvvRrrjlQmzNAeCSLmStP9OSZR9KBx+6cK95LH0TPMC7S80UNGCRxMnbcA0kg8iiFEEhlkYh2Kg7vd/STvPj2Qy1NvKUO+PgCAEIQhBCEIQghAE53kdVfEUUHFYAAAAAElFTkSuQmCC);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	float: left;
+	margin: 0.2rem 0.2rem;
+}
+
+.herder div:nth-child(2){
+	width: 70.5%;
+	height: 0.6rem;
+	text-align: center;
+	float: left;
+	margin: 0.2rem 0.2rem;
+	color: #808080;
+	line-height: 0.6rem;
+	font-size: 0.426666rem;
+}

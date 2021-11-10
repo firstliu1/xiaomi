@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport"
+			content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script src="../js/flexible.js"></script>
+		<link rel="shortcut icon" href="https://s02.mifile.cn/assets/static/image/logo-mi2.png" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="../css/public.css" />
+		<script src="../js/jquery.js"></script>
+		<style type="text/css">
+			.body {
+				width: 9.95rem;
+				height: 99.5vh;
+				position: relative;
+				margin: 0 auto;
+				background-color: #666666;
+				border: 0.01rem solid #D3D3D3;
+			}
+
+			.tankuang {
+				width: 90%;
+				height: 2rem;
+				margin: 2rem auto;
+				border-radius: 1.5rem;
+				background-color: white;
+				font-size: 0.5rem;
+				text-align: center;
+				line-height: 2rem;
+			}
+			.quxiao{
+				width: 90%;
+				height: 2rem;
+				margin: 2rem auto;
+				border-radius: 1.5rem;
+				background-color: white;
+				font-size: 0.5rem;
+				text-align: center;
+				line-height: 2rem;
+			}
+			
+
+			.zhezhao {
+				width: 100%;
+				height: 100vh;
+				position: absolute;
+				top: 0;
+				background-color: #000000;
+				opacity: 90%;
+			}
+
+			.jiazai {
+				width: 5rem;
+				height: 5rem;
+				margin: 6rem auto;
+			}
+
+			.jiazai div {
+				width: 0.133333rem;
+				height: 0.5rem;
+				float: left;
+				background-color: white;
+			}
+
+			.jiazai div:nth-child(1) {
+				position: absolute;
+				width: 0.133333rem;
+				height: 0.5rem;
+				background-color: white;
+				left: 5.05rem;
+				top: 6.05rem;
+			}
+
+			.jiazai div:nth-child(2) {
+				position: absolute;
+				width: 0.133333rem;
+				height: 0.5rem;
+				background-color: white;
+				left: 4.45rem;
+				top: 6.4rem;
+				transform: rotate(115deg);
+			}
+
+			.jiazai div:nth-child(3) {
+				position: absolute;
+				width: 0.133333rem;
+				height: 0.5rem;
+				background-color: white;
+				left: 4.5rem;
+				transform: rotate(60deg);
+				top: 6.95rem;
+			}
+
+			.jiazai div:nth-child(4) {
+				position: absolute;
+				width: 0.133333rem;
+				height: 0.5rem;
+				background-color: white;
+				left: 5.6rem;
+				top: 6.4rem;
+				transform: rotate(-115deg);
+			}
+
+			.jiazai div:nth-child(5) {
+				position: absolute;
+				width: 0.133333rem;
+				height: 0.5rem;
+				background-color: white;
+				left: 5.6rem;
+				top: 6.95rem;
+				transform: rotate(-60deg);
+			}
+
+			.jiazai div:nth-child(6) {
+				position: absolute;
+				width: 0.133333rem;
+				height: 0.5rem;
+				background-color: white;
+				left: 5.02rem;
+				top: 7.25rem;
+			}
+
+			.zhezhao-wenzi {
+				width: 4rem;
+				height: 1rem;
+				margin: 0 auto;
+				margin-top: -7rem;
+				margin-left: 3.5rem;
+				font-size: 0.426666rem;
+				color: white;
+			}
+
+			.zhezhao-none {
+				display: none;
+			}
+			.weixin{
+				width: 4.5rem;
+				height:5.5rem;
+				margin-top:1rem;
+				margin-left:0.4rem;
+			}
+			.zhifubao{
+				width: 4.5rem;
+				height: 5.5rem;
+			}
+		</style>
+		<title>支付页面</title>
+	</head>
+	<body>
+		<div class="body">
+			<img class="weixin" src="../img/wx.jpg" />
+			<img class="zhifubao" src="../img/zfb.jpg" />
+			<div class="tankuang">
+				已完成支付
+			</div>
+			<div class="quxiao">
+				取消支付
+			</div>
+			<div class="zhezhao">
+				<div class="jiazai">
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+				<div class="zhezhao-wenzi">正在进入订单页面...</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+		$(function(){
+			$(".zhezhao").addClass("zhezhao-none");
+			$(".jiazai").children().addClass("zhezhao-none");
+			$(".tankuang").click(function(){
+					setTimeout(function() {
+						$(".zhezhao").removeClass("zhezhao-none");
+					}, 1000);
+					setTimeout(function() {
+						$(".jiazai").children().eq(0).removeClass("zhezhao-none");
+					}, 1200);
+					setTimeout(function() {
+						$(".jiazai").children().eq(3).removeClass("zhezhao-none");
+					}, 1400);
+					setTimeout(function() {
+						$(".jiazai").children().eq(4).removeClass("zhezhao-none");
+					}, 1600);
+					setTimeout(function() {
+						$(".jiazai").children().eq(5).removeClass("zhezhao-none");
+					}, 1800);
+					setTimeout(function() {
+						$(".jiazai").children().eq(2).removeClass("zhezhao-none");
+					}, 2000);
+					setTimeout(function() {
+						$(".jiazai").children().eq(1).removeClass("zhezhao-none");
+						location.href="dingdan.html?id=1";
+					}, 2200);
+			})
+			$(".quxiao").click(function(){
+					setTimeout(function() {
+						$(".zhezhao").removeClass("zhezhao-none");
+					}, 1000);
+					setTimeout(function() {
+						$(".jiazai").children().eq(0).removeClass("zhezhao-none");
+					}, 1200);
+					setTimeout(function() {
+						$(".jiazai").children().eq(3).removeClass("zhezhao-none");
+					}, 1400);
+					setTimeout(function() {
+						$(".jiazai").children().eq(4).removeClass("zhezhao-none");
+					}, 1600);
+					setTimeout(function() {
+						$(".jiazai").children().eq(5).removeClass("zhezhao-none");
+					}, 1800);
+					setTimeout(function() {
+						$(".jiazai").children().eq(2).removeClass("zhezhao-none");
+					}, 2000);
+					setTimeout(function() {
+						$(".jiazai").children().eq(1).removeClass("zhezhao-none");
+						location.href="dingdan.html?id=2";
+					}, 2200);
+			})
+			
+		})
+			
+		</script>
+	</body>
+</html>

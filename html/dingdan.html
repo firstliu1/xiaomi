@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport"
+			content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script src="../js/flexible.js"></script>
+		<link rel="shortcut icon" href="https://s02.mifile.cn/assets/static/image/logo-mi2.png" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="../css/public.css" />
+		<link rel="stylesheet" type="text/css" href="../css/dingdan.css" />
+		<script src="../js/jquery.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$(".herder").children().eq(0).click(function() {
+					parent.location.href = "../index.html";
+				})
+				$(".herder").children().eq(2).click(function() {
+					parent.location.href = "selectshangpin.html";
+				})
+				$(".tou").children().eq(0).addClass("touys");
+				$(".zhongjian").addClass("none-no");
+				$(".zhongjian").eq(0).removeClass("none-no");
+				$(".tou").children().click(function() {
+					$(".tou").children().removeClass("touys");
+					$(this).addClass("touys");
+					if ($(this).text() == "全部") {
+						$(".zhongjian").eq(0).removeClass("none-no");
+						$(".zhongjian").eq(1).addClass("none-no");
+						$(".zhongjian").eq(2).addClass("none-no");
+					} else if ($(this).text() == "待付款") {
+						$(".zhongjian").eq(0).addClass("none-no");
+						$(".zhongjian").eq(1).removeClass("none-no");
+						$(".zhongjian").eq(2).addClass("none-no");
+					} else if ($(this).text() == "待收货") {
+						$(".zhongjian").eq(0).addClass("none-no");
+						$(".zhongjian").eq(1).addClass("none-no");
+						$(".zhongjian").eq(2).removeClass("none-no");
+					}
+				})
+				/* 判断路径传过来的值 */
+				function request(paras) {
+					var url = location.href;
+					var paraString = url.substring(url.indexOf("?") + 1, url.length).split("&");
+					var paraObj = {}
+					for (i = 0; j = paraString[i]; i++) {
+						paraObj[j.substring(0, j.indexOf("=")).toLowerCase()] =
+							j.substring(j.indexOf("=") + 1, j.length);
+					}
+					var returnValue = paraObj[paras.toLowerCase()];
+					if (typeof(returnValue) == "undefined") {
+						return "";
+					} else {
+						return returnValue;
+					}
+				}
+				if(request('id')==1){
+					$(".tou").children().removeClass("touys");
+					$(".tou").children().eq(2).addClass("touys");
+					$(".zhongjian").eq(0).addClass("none-no");
+					$(".zhongjian").eq(1).addClass("none-no");
+					$(".zhongjian").eq(2).removeClass("none-no");
+				}else{
+					$(".tou").children().removeClass("touys");
+					$(".tou").children().eq(1).addClass("touys");
+					$(".zhongjian").eq(0).addClass("none-no");
+					$(".zhongjian").eq(1).removeClass("none-no");
+					$(".zhongjian").eq(2).addClass("none-no");
+				}
+				$(document).on("click",".foot div", function () {
+					 /* foot里面第一个div的值 可判断多个 */
+					 if($(this).eq(0).text()=="取消订单"){
+						 console.log("立即付款") 
+						 console.log( $(this).parent().prev().children().eq(0).html())
+					} 
+					 
+				}) 
+			})
+		</script>
+		<title></title>
+	</head>
+	<body>
+		<div class="body">
+			<div class="herder">
+				<div></div>
+				<div>我的订单</div>
+				<div></div>
+			</div>
+			<div class="tou">
+				<div>全部</div>
+				<div>待付款</div>
+				<div>待收货</div>
+				<div>待收货</div>
+			</div>
+			<div class="zhongjian">
+				<!-- 全部 -->
+				<div class="sp">
+					<div class="sp-tou">
+						<img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e1f03f361e857881963e47ea2c7270ef.png" />
+						<span>小米商城</span>
+						<span>等待付款</span>
+					</div>
+					<div class="sp-ms">
+						<img src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1606550565.23837624.jpg" />
+						<span>小米人体传感器2 白色</span>
+						<span>￥</span>
+						<span>54.00</span>
+						<span>x</span>
+						<span>1</span>
+					</div>
+					<div class="sp-ms">
+						<img src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1606550565.23837624.jpg" />
+						<span>小米人体传感器2 白色</span>
+						<span>￥</span>
+						<span>54.00</span>
+						<span>x</span>
+						<span>1</span>
+					</div>
+					<div class="shijian">
+						<span>2021-11-06 11.32</span>
+						<div>
+							<span>共</span>
+							<span>1</span>
+							<span>件商品</span>
+							<span>应付金额:</span>
+							<span>64.00</span>
+							<span>元</span>
+						</div>
+					</div>
+					<div class="foot">
+						<div>立即付款</div>
+						<div>取消订单</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="zhongjian">
+				<!-- 待付款 -->
+				<div class="sp">
+					<div class="sp-tou">
+						<img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e1f03f361e857881963e47ea2c7270ef.png" />
+						<span>小米商城</span>
+						<span>等待付款</span>
+					</div>
+					<div class="sp-ms">
+						<img src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1606550565.23837624.jpg" />
+						<span>小米人体传感器2 白色</span>
+						<span>￥</span>
+						<span>54.00</span>
+						<span>x</span>
+						<span>1</span>
+					</div>
+					<div class="sp-ms">
+						<img src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1606550565.23837624.jpg" />
+						<span>小米人体传感器2 白色</span>
+						<span>￥</span>
+						<span>54.00</span>
+						<span>x</span>
+						<span>1</span>
+					</div>
+					<div class="shijian">
+						<span>2021-11-06 11.32</span>
+						<div>
+							<span>共</span>
+							<span>1</span>
+							<span>件商品</span>
+							<span>应付金额:</span>
+							<span>64.00</span>
+							<span>元</span>
+						</div>
+					</div>
+					<div class="foot">
+						<div>立即付款</div>
+						<div>取消订单</div>
+					</div>
+				</div>
+				
+			</div>
+
+
+			<div class="zhongjian">
+				<!-- 待收货 -->
+				<div class="sp">
+					<div class="sp-tou">
+						<img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e1f03f361e857881963e47ea2c7270ef.png" />
+						<span>小米商城</span>
+						<span>等待收货</span>
+					</div>
+					<div class="sp-ms">
+						<img src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1606550565.23837624.jpg" />
+						<span>小米人体传感器2 白色</span>
+						<span>￥</span>
+						<span>54.00</span>
+						<span>x</span>
+						<span>1</span>
+					</div>
+					<div class="sp-ms">
+						<img src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1606550565.23837624.jpg" />
+						<span>小米人体传感器2 白色</span>
+						<span>￥</span>
+						<span>54.00</span>
+						<span>x</span>
+						<span>1</span>
+					</div>
+					<div class="shijian">
+						<span>2021-11-06 11.32</span>
+						<div>
+							<span>共</span>
+							<span>1</span>
+							<span>件商品</span>
+							<span>应付金额:</span>
+							<span>64.00</span>
+							<span>元</span>
+						</div>
+					</div>
+					<div class="foot">
+						<div>确认收货</div>
+						<div>立即评价</div>
+					</div>
+				</div>
+			</div>
+			<div class="foot-fo">
+
+			</div>
+		</div>
+	</body>
+</html>

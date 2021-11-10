@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport"
+			content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>小米官网 移动端</title>
+		<script src="../js/flexible.js"></script>
+		<link rel="shortcut icon" href="https://s02.mifile.cn/assets/static/image/logo-mi2.png" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="../css/public.css" />
+		<link rel="stylesheet" type="text/css" href="../css/buyphone.css" />
+		<script src="../js/jquery.js"></script>
+		<title></title>
+	</head>
+	<body>
+		<div class="shangpin">
+			<div class="header">
+				<div class="header-zuo" onclick="fanhui(0)"></div>
+				<div class="header-wenzi">
+					<div class="dian" onclick="shang(0)">商品</div>
+					<div class="dian" onclick="shang(1)">评价</div>
+					<div class="dian" onclick="shang(2)">详情</div>
+					<div class="dian" onclick="shang(3)">推荐</div>
+					<span class="status-other1"></span>
+					<span class="status-other2"></span>
+					<span class="status-other3"></span>
+					<span class="status-other4"></span>
+				</div>
+				<div class="header-you"></div>
+			</div>
+			<div class="body">
+				<div class="rightheng">
+					<div class="phoneimg" id="sp1">
+						<div class="img-hua">
+							<img
+								src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c935889bf56a8b9e056c54897c82953e.jpg" />
+							<img
+								src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/3560fba98ba4c16a344305437dc8ebf3.jpg">
+							<img
+								src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e52ff0ceffa3da19536b811863639352.jpg" />
+							<img
+								src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/6fe5d1849dd52dc7fa20dfa0a3b94ea0.jpg" />
+							<img
+								src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/62dc98a8b2fb5d6fe464219f3f40080b.jpg" />
+						</div>
+					</div>
+					<div class="top-wenzi">
+						<span>￥</span>
+						<span>1499</span>
+						<span><s>￥1799</s></span>
+					</div>
+					<div class="shangpin-youh">
+						<div class="youhui" onclick="yincang(1)">
+							<span>预计得300米金</span>
+							<span>更多></span>
+							<span>赠完即止: 满1件赠价值159元黑鲨耳机</span>
+						</div>
+					</div>
+					<div class="shangpin-mc">
+						<span>黑鲨4</span>
+					</div>
+					<div class="top-xiaoxi">
+						<div>
+							<span>「赠冰封散热背夹标准版 ！享12期分期免息！分期满减至高100元」</span>
+						</div>
+					</div>
+					<div class="shangpin-jiesao">
+						<div class="imgs-xh1"></div><span>【大电量】120W极速闪充+4500mAh双电竞电池</span><br />
+						<div class="imgs-xh2"></div><span>【超流畅】720Hz触控采样率+144Hz 三星E4屏幕</span><br />
+						<div class="imgs-xh3"></div><span>【超体验】磁动力升降肩键</span>
+					</div>
+					<div class="shangpin-shebei" onclick="yincang(2)">
+						<div class="shangp-xq">
+							<img src="https://i8.mifile.cn/b2c-mimall-media/7692726e7a1dd34a3b1b4ede8aca020d.png">
+							<div>三摄像头</div>
+							<div>4800万+800...</div>
+						</div>
+						<div class="shangp-xq">
+							<img src="https://i8.mifile.cn/b2c-mimall-media/7692726e7a1dd34a3b1b4ede8aca020d.png">
+							<div>CPU</div>
+							<div>晓龙870</div>
+						</div>
+						<div class="shangp-xq">
+							<img src="https://i8.mifile.cn/b2c-mimall-media/7692726e7a1dd34a3b1b4ede8aca020d.png">
+							<div>超大屏</div>
+							<div>6.67英寸</div>
+						</div>
+						<div class="shangp-xq">
+							<img src="https://i8.mifile.cn/b2c-mimall-media/7692726e7a1dd34a3b1b4ede8aca020d.png">
+							<div>屏幕分辨率</div>
+							<div>1080×2400</div>
+						</div>
+						<div class="shangp-xq">
+							<img src="https://i8.mifile.cn/b2c-mimall-media/7692726e7a1dd34a3b1b4ede8aca020d.png">
+							<div>极速畅玩</div>
+							<div>6GB/8GB/12...</div>
+						</div>
+						<div class="shangp-xq">
+							<img src="https://i8.mifile.cn/b2c-mimall-media/7692726e7a1dd34a3b1b4ede8aca020d.png">
+							<div>存储容量</div>
+							<div>128GB/256GB</div>
+						</div>
+						<div class="shangp-xq">
+							<img src="https://i8.mifile.cn/b2c-mimall-media/7692726e7a1dd34a3b1b4ede8aca020d.png">
+							<div>普通厚度</div>
+							<div>9.9mm</div>
+						</div>
+						<div class="shangp-xq">
+							<img src="https://i8.mifile.cn/b2c-mimall-media/7692726e7a1dd34a3b1b4ede8aca020d.png">
+							<div>超长待机</div>
+							<div>4500mAH</div>
+						</div>
+						<div class="shangp-xq">
+							<img src="https://i8.mifile.cn/b2c-mimall-media/7692726e7a1dd34a3b1b4ede8aca020d.png">
+							<div>运营商网络</div>
+							<div>双模5G全网通</div>
+						</div>
+						<div class="shangp-xq">
+							<img src="https://i8.mifile.cn/b2c-mimall-media/7692726e7a1dd34a3b1b4ede8aca020d.png">
+							<div>网络模式</div>
+							<div>双卡双待</div>
+						</div>
+					</div>
+					<div class="xiaheng"></div>
+					<div class="shangpin-shebei" onclick="yincang(6)">
+						<div class="shangp-xq">
+							<img src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/a5ab24dcb527e49f970f13b11e000ab1.png">
+							<div>门体</div>
+							<div>对开</div>
+						</div>
+						<div class="shangp-xq">
+							<img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/6f386d71d6437ee45fdc5ce537cfb3a1.png">
+							<div>制冷方式</div>
+							<div>风冷</div>
+						</div>
+						<div class="shangp-xq">
+							<img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5d66c2fa36fb0a73022274c78f205de7.png">
+							<div>能效等级</div>
+							<div>一级</div>
+						</div>
+						<div class="shangp-xq">
+							<img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/81bfc8e9cfc6f15cd132146b8bedf66e.png">
+							<div>产品尺寸</div>
+							<div>905(宽)+...</div>
+						</div>
+						<div class="shangp-xq">
+							<img src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/f0c04e138bfed2b1ebb589de615236d1.png">
+							<div>压缩机</div>
+							<div>变频</div>
+						</div>
+						<div class="shangp-xq">
+							<img src="https://i8.mifile.cn/b2c-mimall-media/7692726e7a1dd34a3b1b4ede8aca020d.png">
+							<div>Wi-Fi连接</div>
+							<div>支持</div>
+						</div>
+					</div>
+					<div class="xiaheng"></div>
+					<div class="shangpin-shebei" onclick="yincang(7)">
+						<div class="shangp-xq">
+							<img src="https://i8.mifile.cn/b2c-mimall-media/86a3bd46cf4f7f19daa2c3250cf30604.png">
+							<div>屏幕尺寸</div>
+							<div>55"-65"</div>
+						</div>
+						<div class="shangp-xq">
+							<img src="https://i8.mifile.cn/b2c-mimall-media/a5ab24dcb527e49f970f13b11e000ab1.png">
+							<div>分辨率</div>
+							<div>4K超高清</div>
+						</div>
+						<div class="shangp-xq">
+							<img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/cf1a45f60d3de0598e994d665fc05ab9.png">
+							<div>系列</div>
+							<div>全面屏系列</div>
+						</div>
+						<div class="shangp-xq">
+							<img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d138418b02fd40ff6ac2d4f20f03459c.png">
+							<div>边框材质</div>
+							<div>塑料</div>
+						</div>
+						<div class="shangp-xq">
+							<img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/635e4b517aa833caebe18cc788967b4c.png">
+							<div>遥控方式</div>
+							<div>蓝牙语音</div>
+						</div>
+						
+					</div>
+					<div class="xiaheng"></div>
+					<div class="shangpin-xuanze">
+						<div class="xuanze-peizhi" onclick="yincang(4)">
+							<div>已选</div>
+							<span>黑鲨4</span>
+							<span class="xz-bb">12GB+128GB</span>
+							<span class="xz-ys">凌光灰</span>
+							<span class="xz-sl">1</span>
+							<div></div>
+						</div>
+						<div class="xuanze-dizhi">
+							<div>送至</div>
+							<img
+								src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAABgFBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAURmmrAAAAf3RSTlMAAQIDBAUKCwwOEBESExQVFhcYGRobHB0eHyAkJSYoKSotMDE2ODk/Qk5PUlpbXF1eX2FjaWprbG1ydnl6fX6AgYOEhYaHiIuUlZqcnZ6foKKsr7K1t7i5ur2+v8DFxsfIycrLzNLU1dbX2Nna2+Du7/Dx8/T19vf4+fr7/P3+i5i9oQAAAkFJREFUGBntwfs322AABuA3ilRpY2PTDnOpXSmbbXazVS90G6pKu0vZlRnGJpqWNMn7ry9fj+MgbXV+9jy4dCGujqFwdkNVN7LhoasunEfqnvyW55H818luCbU92NJ5gr45hlpa4ySLO6nh/paW/uHUTpFk1IOqWmcPaX6euC6hTOp6+sXkwTsPqpk5ZGk+IOGYFEiWeBBDZdI4WXrTjFOa35bIhxIq6d2mMduMM5rnDG71oILG1yWu+uEQWKX+qhFOHT9YeCxBUEKf9tRcSIEgPSnwewecbhe43QkhmLFoszJBCNd+U7sFpyg5J8GmZE2WmRkFNilJRuD0gbwHYdSiOh3oiqm0QhDuk+/htEnehJAjY01AU5zMQegjf8Fpn3RDUEk/bH5SheAm9+H0h/RAUEk/bF2kCsFD/oXTOjkAIUfGm4CmGLkCYYBch9MyOQIhZFGN+W9Mq7TGIIySy3B6QS42wKZkTJaZWQW2hkXyOZwGVe72QAhmLNqsTBBC7y73BuHUvkL9pQuCEsqpex9HfBBckzpzCpwanhX5sw8O/RssTkiooHONzLTjjCtZcq0TFd09pJVuwyltaYsHd1DFozyNWS9O8M4ZzI+jGjlaoD7vxTHvvM5CVEZV7gRppL044k0bZMKNWhIajaQPZb6kQS2B2txxjfqCDzbfgk4t7sY53DOksaQAypJBzrhxvmmNZkpRUia1adRDjmgspVIlahEZdZGjpGmSURn1imikFkH95Kl8fkrGf5DDYRmXLuwfIPyv3DLCuHAAAAAASUVORK5CYII=">
+							<span>北京市</span>
+							<span>东城区</span>
+							<span>支付后7日内发货</span>
+							<div></div>
+						</div>
+						<div>
+							<img
+								src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAlCAMAAADyQNAxAAAAq1BMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA0NbREAAAAOXRSTlMAAQIDBAUGBwgJCgsMDg8REhMUFRcYGRobHSAhIyUqLC0uLzAxNDY3ODk6PD5AQkNERUZHSUpLTE2r4yhyAAABn0lEQVQ4y42U0XaaUBBFB0okoNRCqFERk5QaCha9Ilz2/39ZH1QUJV2cx7vOmpk7s2dErjJtL05V1VQqjT3blD4Z/nqruUhv177xaJokiq5UMrkPFJZAU2dR4FpuEGV1A5RhJ9xoVYHOl0774ixzDdVqdGN601AsnE54Z1GAfmttxkpDPn4odZyDXl2ShhV8Oj3fdj6hCs+/KyF3ervj5FBORESMBIqx9GtcQGKIiK/QC/lKC43yRcz1V/mmr+4p59oUe0uz7DP9LKqPJ5Flw9YWT1P3hfqh4M+ziFOjPYkh6zPt4PBqiEgGsaQQ9aRTcJwZIiIRpKIgeDC97OF4JicAJRW4pzk9tdxNd6Bm59G4UEkDloiIzDfxebLhHo7zy/wsaNpY1l/qj9ZUXkF1oWrrMjbAr28i0z0cwmuNAajrH+1NA+/PLzs4zG8YjSC96Zf9u6FO1T3IGcS3vR+lABz9Djw12uvM0U4bUPPOSpzm2GFilOjDzLjncG3e8WV9d4w+vgayOoz7gTs0cB+H7fbAOzHw5gy8X0Nv4X/v6j/fPVqVkOu9NwAAAABJRU5ErkJggg==" />
+							<span>小米自营</span>
+							<img
+								src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAlCAMAAADyQNAxAAAAq1BMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA0NbREAAAAOXRSTlMAAQIDBAUGBwgJCgsMDg8REhMUFRcYGRobHSAhIyUqLC0uLzAxNDY3ODk6PD5AQkNERUZHSUpLTE2r4yhyAAABn0lEQVQ4y42U0XaaUBBFB0okoNRCqFERk5QaCha9Ilz2/39ZH1QUJV2cx7vOmpk7s2dErjJtL05V1VQqjT3blD4Z/nqruUhv177xaJokiq5UMrkPFJZAU2dR4FpuEGV1A5RhJ9xoVYHOl0774ixzDdVqdGN601AsnE54Z1GAfmttxkpDPn4odZyDXl2ShhV8Oj3fdj6hCs+/KyF3ervj5FBORESMBIqx9GtcQGKIiK/QC/lKC43yRcz1V/mmr+4p59oUe0uz7DP9LKqPJ5Flw9YWT1P3hfqh4M+ziFOjPYkh6zPt4PBqiEgGsaQQ9aRTcJwZIiIRpKIgeDC97OF4JicAJRW4pzk9tdxNd6Bm59G4UEkDloiIzDfxebLhHo7zy/wsaNpY1l/qj9ZUXkF1oWrrMjbAr28i0z0cwmuNAajrH+1NA+/PLzs4zG8YjSC96Zf9u6FO1T3IGcS3vR+lABz9Djw12uvM0U4bUPPOSpzm2GFilOjDzLjncG3e8WV9d4w+vgayOoz7gTs0cB+H7fbAOzHw5gy8X0Nv4X/v6j/fPVqVkOu9NwAAAABJRU5ErkJggg==" />
+							<span>小米发货</span>
+							<img
+								src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAlCAMAAADyQNAxAAAAq1BMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA0NbREAAAAOXRSTlMAAQIDBAUGBwgJCgsMDg8REhMUFRcYGRobHSAhIyUqLC0uLzAxNDY3ODk6PD5AQkNERUZHSUpLTE2r4yhyAAABn0lEQVQ4y42U0XaaUBBFB0okoNRCqFERk5QaCha9Ilz2/39ZH1QUJV2cx7vOmpk7s2dErjJtL05V1VQqjT3blD4Z/nqruUhv177xaJokiq5UMrkPFJZAU2dR4FpuEGV1A5RhJ9xoVYHOl0774ixzDdVqdGN601AsnE54Z1GAfmttxkpDPn4odZyDXl2ShhV8Oj3fdj6hCs+/KyF3ervj5FBORESMBIqx9GtcQGKIiK/QC/lKC43yRcz1V/mmr+4p59oUe0uz7DP9LKqPJ5Flw9YWT1P3hfqh4M+ziFOjPYkh6zPt4PBqiEgGsaQQ9aRTcJwZIiIRpKIgeDC97OF4JicAJRW4pzk9tdxNd6Bm59G4UEkDloiIzDfxebLhHo7zy/wsaNpY1l/qj9ZUXkF1oWrrMjbAr28i0z0cwmuNAajrH+1NA+/PLzs4zG8YjSC96Zf9u6FO1T3IGcS3vR+lABz9Djw12uvM0U4bUPPOSpzm2GFilOjDzLjncG3e8WV9d4w+vgayOoz7gTs0cB+H7fbAOzHw5gy8X0Nv4X/v6j/fPVqVkOu9NwAAAABJRU5ErkJggg==" />
+							<span>7天无理由退货</span>
+						</div>
+						<div>
+						</div>
+					</div>
+					<div class="shangpin-pinjia" id="pj1">
+						<div class="pinjia-top">
+							<span>用户评价</span>
+							<span>好评率</span>
+							<span>98.4</span>
+							<span>%</span>
+							<span></span>
+						</div>
+						<div class="pinjia-ys">
+							<div>价格实惠</div>
+							<div>运行稳定</div>
+							<div>颜值够高</div>
+							<div>续航出色</div>
+							<div>性能一流</div>
+							<div>系统稳定</div>
+						</div>
+						<div class="pinjia-ren">
+								<div></div>
+								<div></div>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+			<div class="dibu">
+				<div class="dibu-shouye" onclick="shouye()">
+					<img src="https://m.mi.com/static/img/icon-home2.10a9b00d72.png">
+					<span>首页</span>
+				</div>
+				<div class="dibu-kefu">
+					<img src="https://m.mi.com/static/img/icon-service.1ffa47012a.png" />
+					<span>客服</span>
+				</div>
+				<div class="dibu-gwc">
+					<img src="https://m.mi.com/static/img/icon-cart2.f238ec784b.png" />
+					<span>购物车</span>
+				</div>
+				<div class="dibu-gm">
+					<div>加入购物车</div>
+					<div>立即购买</div>
+				</div>
+
+			</div>
+			<!-- 遮罩 -->
+			<div class="youhuixq"></div>
+			<!-- 优惠券 -->
+			<div class="youhuixq-body">
+				<div>优惠</div>
+				<div onclick="yincang(0)"></div>
+				<div>米金</div>
+				<div>米金</div>
+				<div>购买预计可得300米金</div>
+				<div></div>
+				<div>促销</div>
+				<div>赠完为止</div>
+				<div>满一件赠价值159元黑鲨耳机 标准版 黑色</div>
+				<div></div>
+				<div onclick="yincang(0)">确定</div>
+			</div>
+			<!-- 关键参数 -->
+			<div class="canshu">
+				<div class="gjcs">关键参数</div>
+				<div class="csdj" onclick="yincang(3)"></div>
+				<div class="heng">
+					<div class="csyangshi">
+						<span class="qian">后置摄像头</span>
+						<span class="hou">4000万+800万+500万像素</span>
+					</div>
+					<div class="csyangshi">
+						<span class="qian">CPU型号</span>
+						<span class="hou">晓龙870</span>
+					</div>
+					<div class="csyangshi">
+						<span class="qian">前置摄像头</span>
+						<span class="hou">2000万像素</span>
+					</div>
+					<div class="csyangshi">
+						<span class="qian">屏幕尺寸</span>
+						<span class="hou">6.67英寸</span>
+					</div>
+					<div class="csyangshi">
+						<span class="qian">屏幕分辨率</span>
+						<span class="hou">1080×2400</span>
+					</div>
+					<div class="csyangshi">
+						<span class="qian">运行内存</span>
+						<span class="hou">6GB/8GB/12GB</span>
+					</div>
+					<div class="csyangshi">
+						<span class="qian">存储容量</span>
+						<span class="hou">128GB/256GB</span>
+					</div>
+					<div class="csyangshi">
+						<span class="qian">机身厚度</span>
+						<span class="hou">9.9mm</span>
+					</div>
+					<div class="csyangshi">
+						<span class="qian">电池容量</span>
+						<span class="hou">4500mAh</span>
+					</div>
+					<div class="csyangshi">
+						<span class="qian">网络类型</span>
+						<span class="hou">双模5G全网通</span>
+					</div>
+					<div class="csyangshi">
+						<span class="qian">网络模式</span>
+						<span class="hou">双卡双待</span>
+					</div>
+				</div>
+				<div class="qd" onclick="yincang(3)">确定</div>
+			</div>
+			<div class="canshu">
+				<div class="gjcs">关键参数</div>
+				<div class="csdj" onclick="yincang(8)"></div>
+				<div class="heng">
+					<div class="csyangshi">
+						<span class="qian">门款式</span>
+						<span class="hou">十字门</span>
+					</div>
+					<div class="csyangshi">
+						<span class="qian">制冷方式</span>
+						<span class="hou">风冷</span>
+					</div>
+					<div class="csyangshi">
+						<span class="qian">能效等级</span>
+						<span class="hou">二级</span>
+					</div>
+					<div class="csyangshi">
+						<span class="qian">产品尺寸</span>
+						<span class="hou">833(宽)*678(深)*1860(高)mm</span>
+					</div>
+					<div class="csyangshi">
+						<span class="qian">压缩机</span>
+						<span class="hou">变频</span>
+					</div>
+					<div class="csyangshi">
+						<span class="qian">Wi-Fi连接</span>
+						<span class="hou">支持</span>
+					</div>
+				</div>
+				<div class="qd" onclick="yincang(8)">确定</div>
+			</div>
+			<div class="canshu">
+				<div class="gjcs">关键参数</div>
+				<div class="csdj" onclick="yincang(9)"></div>
+				<div class="heng">
+					<div class="csyangshi">
+						<span class="qian">屏幕尺寸</span>
+						<span class="hou">55英寸</span>
+					</div>
+					<div class="csyangshi">
+						<span class="qian">屏幕分辨率</span>
+						<span class="hou">3840×2160</span>
+					</div>
+					<div class="csyangshi">
+						<span class="qian">USB</span>
+						<span class="hou">2个</span>
+					</div>
+					<div class="csyangshi">
+						<span class="qian">系列</span>
+						<span class="hou">全面屏系列</span>
+					</div>
+					<div class="csyangshi">
+						<span class="qian">边框材质</span>
+						<span class="hou">塑料</span>
+					</div>
+					<div class="csyangshi">
+						<span class="qian">遥控方式</span>
+						<span class="hou">蓝牙语音</span>
+					</div>
+				</div>
+				<div class="qd" onclick="yincang(9)">确定</div>
+			</div>
+			<div class="goumai">
+				<div class="goumai-header">
+					<img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/2237d83d46b43a7dca0b5fb6db2a9700.png">
+					<div>
+						<span>￥</span>
+						<span>4799</span>
+						<span>Xiaomi 11 Pro</span>
+						<span>8GB+256GB</span>
+						<span>黑色</span>
+					</div>
+				</div>
+				<div class="csdj2" onclick="yincang(5)"></div>
+
+				<div class="goumai-body">
+					<div class="goumai-banben">
+						<span>版本</span>
+						<div class="banben-shuju">
+							<span class="xuanze-banben">12GB+128GB</span>
+							<span class="xuanze-banben">8GB+256GB</span>
+							<span class="xuanze-banben">8GB+128GB</span>
+							<span class="xuanze-banben">6GB+128GB</span>
+							<span class="xuanze-banben">12GB+256GB</span>
+						</div>
+					</div>
+					<div class="goumai-yanse">
+						<span>颜色</span>
+						<div class="yanse-shuju">
+							<span class="xuanze-ys">凌光灰</span>
+							<span class="xuanze-ys">幻境黑</span>
+							<span class="xuanze-ys">墨海黑</span>
+							<span class="xuanze-ys">风暴蓝</span>
+						</div>
+					</div>
+					<div class="goumai-gmsl">
+						<span>购买数量</span>
+						<div class="goumai-sl">
+							<div class="jian"></div>
+							<div class="shuliang">1</div>
+							<div class="jia"></div>
+						</div>
+					</div>
+				</div>
+				<div class="goumai-foot">
+					<div class="font-ys">
+						<div class="jr">加入购物车</div>
+						<div class="gm">立即购买</div>
+					</div>
+				</div>
+			</div>
+
+
+
+		</div>
+		<script type="text/javascript" src="../js/buyphone.js">
+		</script>
+		<script type="text/javascript">
+			$(function(){
+				var xuanzebanben=$(".xuanze-banben");
+				var xuanzeys=$(".xuanze-ys");
+				var xzbb=$(".xz-bb");
+				var xzys=$(".xz-ys");
+				var xzsl=$(".xz-sl");
+				var jia=$(".jia");
+				var jian=$(".jian");
+				var sl=$(".shuliang");
+				var hou=$(".hou");
+				var zhi=parseInt(sl.text());
+				xuanzebanben.first().addClass("banbenys");
+				xuanzeys.first().addClass("banbenys");
+				jia.click(function(){
+					zhi+=1;
+					sl.html(zhi);
+					xzsl.html(zhi);
+				})
+				jian.click(function(){
+					zhi-=1;
+					if(zhi<1){
+					zhi=1;
+					}
+					sl.html(zhi);
+					xzsl.html(zhi);
+				})
+				xuanzebanben.click(function(){
+					xuanzebanben.removeClass("banbenys");
+					$(this).addClass("banbenys");
+					xzbb.html($(this).text());
+				})
+				xuanzeys.click(function(){
+					xuanzeys.removeClass("banbenys");
+					$(this).addClass("banbenys");
+					xzys.html($(this).text());
+				})
+			})
+			
+			
+		
+		</script>
+	</body>
+</html>

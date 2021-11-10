@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport"
+			content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>小米官网 移动端</title>
+		<script type="text/javascript" src="js/way.min.js"></script>
+		<script src="./js/flexible.js"></script>
+		<link rel="stylesheet" type="text/css" href="./css/index.css" />
+		<link rel="shortcut icon" href="https://s02.mifile.cn/assets/static/image/logo-mi2.png" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="./css/public.css" />
+		<script src="js/jquery.js"></script>
+	</head>
+	<body style="position: relative; height: 100vh;">
+		<div class="header">
+			<a class="topad" href="javascript:void(0)">
+				<img src="img/header.png" />
+			</a>
+
+			<div class="searchbar">
+				<img src="./img/下载.png">
+				<div onclick="tiaozhuan(1)">
+					<span></span>
+					搜索商品名称
+				</div>
+				<img onclick="caidan(4)" src="https://m.mi.com/static/img/icon-user.23496a0116.png" />
+			</div>
+			<div class="headermenu">
+				<a class="gh" href="javascript:dian(0)">推荐</a>
+				<a class="gh" href="javascript:dian(1)">智能</a>
+				<a class="gh" href="javascript:dian(2)">电视</a>
+				<a class="gh" href="javascript:dian(3)">家电</a>
+				<a class="gh" href="javascript:dian(4)">笔记本</a>
+			</div>
+			<div class="boby" style="height:calc(100vh - 4.7rem);">
+				<div style="overflow-y: auto;height:100%;background-color:#F2F2F2;">
+					<div id="lunbo">
+						<ul>
+							<li><img style="display: block;" class="img-slide"
+									src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/71eb75c42def0487b70fb12447b9afce.jpg?thumb=1&w=720&h=360" />
+							</li>
+							<li><img style="display: none;" class="img-slide"
+									src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/36502ca850b052902fa801911a6ee11a.jpeg?thumb=1&w=720&h=360" />
+							</li>
+							<li><img style="display: none;" class="img-slide"
+									src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d6fc09d5ac55360968009b7559d413cc.jpg?thumb=1&w=720&h=360" />
+						 	</li>
+							<li><img style="display: none;" class="img-slide"
+									src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a4ad5e7823be3723d527e093a604d66d.jpg?thumb=1&w=720&h=360" />
+							</li>
+						</ul>
+						<!--  图片圆点 -->
+						<div id="lunbo-radio">
+							<input type="radio" name="tu" onclick="lunbo(0)" class="lunbo-radio" value="0" />
+							<input type="radio" name="tu" onclick="lunbo(1)" class="lunbo-radio" value="1" />
+							<input type="radio" name="tu" onclick="lunbo(2)" class="lunbo-radio" value="2" />
+							<input type="radio" name="tu" onclick="lunbo(3)" class="lunbo-radio" value="2" />
+						</div>
+					</div>
+					<!--  中部菜单 -->
+					<div class="boby-caidan">
+						<ul>
+							<li><img
+									src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b1749080cf5bbc4dfebff83013bbebaf.png?f=webp&w=216&h=228&bg=FFFFFF">
+							</li>
+							<li><img
+									src="https://i8.mifile.cn/v1/a1/eb5024fe-dfe3-6e53-3e18-675bef5fa06e.webp?w=216&h=228&bg=EAF6FD">
+							</li>
+							<li><img
+									src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/69c250436545049ccab81c3e32033cf2.png?f=webp&w=216&h=228&bg=FFFFFF">
+							</li>
+							<li><img
+									src="https://i8.mifile.cn/v1/a1/e8bc849a-0a3b-21a0-6810-7da3a3903dee.webp?w=216&h=228&bg=FDEFDE">
+							</li>
+							<li><img
+									src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0434594382110f3bd15c90f040d5d542.jpg?f=webp&w=216&h=228&bg=FFFFFF">
+							</li>
+							<li><img
+									src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/64f3988b6216e4c1ab62a7f50df3e816.png?f=webp&w=216&h=228&bg=FFFFFF">
+							</li>
+							<li><img
+									src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9ea68dee2bfa0e55a82236b0d968e975.png?w=216&h=228&bg=FCEAEA">
+							</li>
+							<li><img
+									src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/96c780016ea196743905dc93f9249c39.png?w=216&h=228&bg=FDF5E5">
+							</li>
+							<li><img
+									src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9425031cdd7af22d9a23a5ae16d1f57c.jpg?f=webp&w=216&h=228&bg=FFFFFF">
+							</li>
+							<li><img
+									src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f11f9df6b0b0b428f8c8fc3267131830.png?w=216&h=228&bg=FDEDE8">
+							</li>
+						</ul>
+					</div>
+
+					<div class="boby-tu">
+						<div class="boby-tu-a"></div>
+						<div class="boby-tu-b">
+							<div class="boby-tu-b1"></div>
+							<div class="boby-tu-b2"></div>
+						</div>
+					</div>
+					<div class="boby-tu2"></div>
+					<div class="boby-shouji">
+						<div class="boby-shouji-tu" onclick="changp(0)">
+							<img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b849e46756af7c95002aa3906ed77c13.jpg?thumb=1&w=344&h=280" />
+						</div>
+						<div class="boby-shouji-tu" onclick="changp(0)">
+							<img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b849e46756af7c95002aa3906ed77c13.jpg?thumb=1&w=344&h=280">
+						</div>
+						<div class="boby-shouji-zi" onclick="changp(0)">
+							<div>Xiaomi 11 Pro</div>
+							<div>1/1.22"GN2 | 晓龙888</div>
+							<div>￥4499<span>起 <s>￥4999</s></span></div>
+							<div>立即购买</div>
+						</div>
+						<div class="boby-shouji-zi" onclick="changp(0)">
+							<div>Xiaomi MIX FOLD折...</div>
+							<div>折叠大屏 | 自研芯片</div>
+							<div>￥9999<span>起</span></div>
+							<div>立即购买</div>
+						</div>
+					</div>
+					<div class="boby-shouji">
+						<div class="boby-shouji-tu">
+							<img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b849e46756af7c95002aa3906ed77c13.jpg?thumb=1&w=344&h=280" />
+						</div>
+						<div class="boby-shouji-tu">
+							<img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b849e46756af7c95002aa3906ed77c13.jpg?thumb=1&w=344&h=280">
+						</div>
+						<div class="boby-shouji-zi">
+							<div>Note 9 5G</div>
+							<div>天玑 800U处理器</div>
+							<div>￥1199<span>起 <s>￥1299</s></span></div>
+							<div>立即购买</div>
+						</div>
+						<div class="boby-shouji-zi">
+							<div>Xiaomi 10S</div>
+							<div>晓龙870 | 对称式双扬立体...</div>
+							<div>￥2999<span>起<s>￥3299</s></span></div>
+							<div>立即购买</div>
+						</div>
+					</div>
+					<div class="boby-shouji">
+						<div class="boby-shouji-tu">
+							<img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b849e46756af7c95002aa3906ed77c13.jpg?thumb=1&w=344&h=280" />
+						</div>
+						<div class="boby-shouji-tu">
+							<img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b849e46756af7c95002aa3906ed77c13.jpg?thumb=1&w=344&h=280">
+						</div>
+						<div class="boby-shouji-zi">
+							<div>Note 9 Pro 5G</div>
+							<div>一亿像素夜景相机</div>
+							<div>￥1399<span>起 <s>￥1599</s></span></div>
+							<div>立即购买</div>
+						</div>
+						<div class="boby-shouji-zi">
+							<div>Xiaomi 11</div>
+							<div>晓龙888 | 2k四曲面屏</div>
+							<div>￥3799<span>起</span></div>
+							<div>立即购买</div>
+						</div>
+					</div>
+					<div class="boby-shouji">
+						<div class="boby-shouji-tu">
+							<img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b849e46756af7c95002aa3906ed77c13.jpg?thumb=1&w=344&h=280" />
+						</div>
+						<div class="boby-shouji-tu">
+							<img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b849e46756af7c95002aa3906ed77c13.jpg?thumb=1&w=344&h=280">
+						</div>
+						<div class="boby-shouji-zi">
+							<div>黑鲨4</div>
+							<div>磁动力升降肩键</div>
+							<div>￥2499<span>起</span></div>
+							<div>立即购买</div>
+						</div>
+						<div class="boby-shouji-zi">
+							<div>Redmi K40 Pro</div>
+							<div>晓龙888 | E4 旗舰直屏</div>
+							<div>￥2499<span>起<s>￥2799</s></span></div>
+							<div>立即购买</div>
+						</div>
+					</div>
+					<div class="gduo">更多小米手机产品 ></div>
+					<div class="dianshi"></div>
+					<div class="gduo">更多小米电视产品 ></div>
+					<div class="dianshi"
+						style="background-image: url(https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/393a90da633889384d35acb7c44eeb17.jpg?f=webp&w=1080&h=660&bg=FFFFFF);">
+					</div>
+					<div class="boby-shouji">
+						<div class="boby-shouji-tu">
+							<img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b849e46756af7c95002aa3906ed77c13.jpg?thumb=1&w=344&h=280" />
+						</div>
+						<div class="boby-shouji-tu">
+							<img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b849e46756af7c95002aa3906ed77c13.jpg?thumb=1&w=344&h=280">
+						</div>
+						<div class="boby-shouji-zi">
+							<div>小米笔记本Pro 15</div>
+							<div>大师屏 轻薄大作 | 芯怀猛</div>
+							<div>￥6399<span>起 <s>￥6499</s></span></div>
+							<div>立即购买</div>
+						</div>
+						<div class="boby-shouji-zi">
+							<div>小米笔记本Pro 14</div>
+							<div>大师屏 轻薄大作 | 芯怀猛</div>
+							<div>￥5499<span>起</span></div>
+							<div>立即购买</div>
+						</div>
+					</div>
+					<div class="gduo">更多小米笔记本产品 ></div>
+					<div class="dianshi"
+						style="background-image: url(https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5070349d6511ec431810d7528de020aa.jpg?f=webp&w=1080&h=660&bg=FFFFFF);">
+					</div>
+					<div class="gduo">更多小米家电产品 ></div>
+					<div class="zhineng"
+						style="background-image: url(https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/30f699fd686d90fb0d4e91090ebc38ed.jpg?f=webp&w=1080&h=420&bg=F6F6FF);">
+					</div>
+					<div class="gduo">更多小米智能产品 ></div>
+					<div class="boby-tu3">
+						<img
+							src="https://i8.mifile.cn/v1/a1/46c44f3e-479d-a999-dd2d-98fb39b51e17.webp?w=537&h=720&bg=C0A491" />
+						<img
+							src="https://i8.mifile.cn/v1/a1/b79cb907-3ae4-2a35-6756-b243b386a95a.webp?w=537&h=720&bg=E8CFCB" />
+						<img
+							src="https://i8.mifile.cn/v1/a1/b883172b-5aa3-7855-678f-c615109ee0a7.webp?w=537&h=720&bg=878F9B" />
+						<img
+							src="https://i8.mifile.cn/v1/a1/8cfcd654-4af5-9ae6-c6cc-1ba9d28be8e8.webp?w=537&h=720&bg=9BB5C4" />
+						<img
+							src="https://i8.mifile.cn/v1/a1/52866372-7fe5-76c2-29a0-9ae32d07b8ff.webp?w=537&h=720&bg=D9D8C3" />
+						<img
+							src="https://i8.mifile.cn/v1/a1/ad91499a-59ab-adc3-8fd5-98aefc1c43b4.webp?w=537&h=720&bg=B5C5BE" />
+					</div>
+					<div class="dibu"
+						style="background-image: url(https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f4c4a11536a720ee0f1b516e53e4d868.jpg?f=webp&w=1080&h=420&bg=873FFA);">
+					</div>
+					<div class="di"></div>
+				</div>
+			</div>
+			<div class="boby" style="height:calc(100vh - 4.7rem);display: none;">
+				<iframe width="100%" height="100%" src="html/zhineng.html" frameborder="0"></iframe>
+			</div>
+			<div class="boby" style="height:calc(100vh - 4.7rem);display: none;">
+				<iframe width="100%" height="100%" src="html/tv.html" frameborder="0"></iframe>
+			</div>
+			<div class="boby" style="height:calc(100vh - 4.7rem);display: none;">
+				<iframe width="100%" height="100%" src="html/jiadian.html" frameborder="0"></iframe>
+			</div>
+			<div class="boby" style="height:calc(100vh - 4.7rem);display: none;">
+				<iframe width="100%" height="100%" src="html/bijiben.html" frameborder="0"></iframe>
+			</div>
+			<div class="headerjianz">
+				<span>全部</span>
+				<div class="gh2" onclick="dian(0)">推荐</div>
+				<div class="gh2" onclick="dian(1)">智能</div>
+				<div class="gh2" onclick="dian(2)">电视</div>
+				<div class="gh2" onclick="dian(3)">家电</div>
+				<div class="gh2" onclick="dian(4)">笔记本</div>
+			</div>
+			<div id="zhezhao"></div>
+			<div id="jiantou"></div>
+		</div>
+		<!-- 我的 -->
+		<div class="boby" style="display: none;height:100vh; top:0;">
+			<iframe width="100%" height="100%" src="html/my.html " frameborder="0" ></iframe>
+		</div>
+		 <!-- 分类-->
+		<div class="boby" style="display: none;height:100vh; top:0;">
+			<iframe scrolling="no" width="100%" height="100%" src="html/fenlei.html" frameborder="0" ></iframe>
+		</div>
+		<div class="juedui">
+			<img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/be8d179bf290ba579247340bd02103a3.png">
+		</div>
+		<div class="foot" style="position:absolute;bottom:0;background-color: #FFFFFF;">
+			<div onclick="caidan(0)">
+				<img id="sy" src="https://m.mi.com/static/img/icon-home.c1947eda40.png" />
+				<span id="spansy">首页</span>
+			</div>
+			<div onclick="caidan(1)">
+				<img id="fl" src="https://m.mi.com/static/img/icon-category.be93273636.png">
+				<span id="spanfl">分类</span>
+			</div>
+			<div onclick="caidan(2)">
+				<img id="mq" src="https://m.mi.com/static/img/icon-star.d051789804.png">
+				<span id="spanmq">米圈</span>
+			</div>
+			<div onclick="caidan(3)">
+				<img id="gwc" src="https://m.mi.com/static/img/icon-cart.585c3aa4d3.png">
+				<span id="spangwc">购物车</span>
+			</div>
+			<div onclick="caidan(4)">
+				<img id="wd" src="https://m.mi.com/static/img/icon-user.23496a0116.png">
+				<span id="spanwd">我的</span>
+			</div>
+		</div>
+		<script type="text/javascript" src="./js/index.js">
+		</script>
+	</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport"
+			content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script src="../js/flexible.js"></script>
+		<link rel="shortcut icon" href="https://s02.mifile.cn/assets/static/image/logo-mi2.png" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="../css/public.css" />
+		<link rel="stylesheet" type="text/css" href="../css/bjaddress.css" />
+		<script src="../js/jquery.js"></script>
+		<script src="../js/mychajian.js"></script>
+		<script type="text/javascript">
+		$(function(){
+			$(".herder").children().eq(0).click(function(){
+				window.location.href="address.html";
+			})
+			$(".foot").click(function(){
+				window.location.href="address.html";
+			})
+			$(".zhezhao").addClass("zhezhao-none");
+			$(".dzgl").eq(2).children().eq(1).click(function(){
+				$(".zhezhao").removeClass("zhezhao-none");
+			})
+			$(".zhezhao").children().eq(1).click(function(){
+				 var sheng=$("#province option:selected").text();
+				  var shi=$("#city option:selected").text();
+				   var qu=$("#area option:selected").text();
+				   if(shi!="请选择城市"&&qu!="请选择区域"){
+					    $(".dzgl").eq(2).children().eq(1).attr("placeholder",sheng+" "+shi+" "+qu)
+						$(".zhezhao").addClass("zhezhao-none");
+				   }
+				 
+			})
+		})
+			
+		</script>
+		<title>新增地址</title>
+	</head>
+	<body>
+		<div class="body">
+			<div class="herder">
+				<div></div>
+				<div>新增地址</div>
+			</div>
+			<div class="address">
+				<div class="dzgl">
+					<span>收货人:</span>
+					<input placeholder="真实姓名" />
+				</div>
+				<div class="dzgl">
+					<span>手机号码:</span>
+					<input placeholder="手机号"/>
+				</div>
+				<div class="dzgl">
+					<span>所在地区:</span>
+					<input placeholder="省 市 区 街道信息"/>
+				</div>
+				<div class="dzgl">
+					<span>详细地址:</span>
+					<input placeholder="详细地址" />
+				</div>
+			</div>
+			<div class="foot">
+				保存地址
+			</div>
+			<div class="zhezhao">
+				<div>
+					省份：<select id="province" ></select><br/>
+					城市：<select id="city"></select><br/>
+					区/县：<select id="area"></select>
+				</div>
+				<div>
+					确定
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+

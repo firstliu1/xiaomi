@@ -1,0 +1,138 @@
+.boby{
+	width:9.8rem;
+	height:100vh;
+}
+.boby-img{
+	width: 100%;
+	height:1.12rem;
+}
+.boby-img img{
+	width: 100%;
+	height:100%;
+	
+}
+.boby-height{
+	width:100%;
+	height:0.373333rem;
+	background-color:#4878a6 ;
+}
+.boby-bjbtj{
+	width:100%;
+	height:8.013333rem;
+	background-color: #4878A6;
+}
+.boby-bjbtj div:nth-child(1){
+	width:100%;
+	height:6.013333rem;
+	margin-left:0.2rem;
+}
+
+.boby-bjbtj img{
+	width:95.5%;
+	height:100%;
+}
+
+.boby-bjbtj-wenzi{
+	width:95.5%;
+	height:1.935rem;
+	margin-left:0.2rem;
+	background-color: white;
+}
+.boby-bjbtj-ms{
+	width:7rem ;
+	height:1rem!important;
+	font-size:0.4rem;
+	line-height:1rem;
+	border: 0rem solid red;
+}
+.boby-bjbtj-ms span:first-child{
+	float: left;
+}
+.boby-bjbtj-ms span:nth-child(3){
+	font-weight: bold;
+	font-size:0.3rem;
+	line-height:1rem;
+	color: #EA625B;
+	margin-right:0.5rem;
+	float: right;
+}
+.boby-bjbtj-ms span:nth-child(2){
+	color: #EA625B;
+	float: left;
+	margin-left:3.7rem;
+	
+}
+.boby-bjbtj-gm{
+	width:8rem ;
+	height:0.506666rem;
+	font-size:0.4rem;
+	
+}
+.boby-bjbtj-gm span:first-child{
+	color: #0000006a;
+	font-size:0.35rem;
+	margin-left:0.266666rem;
+	float: left;
+}
+.bjb-gm{
+	width:2.5rem;
+	height:0.8rem;
+	font-size:0.3rem;
+	line-height:0.7rem;
+	text-align: center;
+	margin-top:-0.533333rem;
+	margin-right:0.2rem;
+	float: right;
+	color:white;
+	background-color: #EA625B;
+}
+.boby-shouji{
+	width: 100%;
+}
+
+.boby-shouji-tu img{
+	width:4.4rem;
+}
+.imgs{
+	width: 4.3rem !important;
+	margin-left:0.1rem;
+}
+.goods-font{
+	width: 4.4rem;
+	margin-left:0.3rem;
+	border-radius:2%;
+	margin-top:-0.1rem;
+	background-color: white;
+	
+}
+.goods-font div:first-child{
+	margin-left:0.5rem;
+	
+}
+.goods-font div:nth-child(2){
+	margin-left:0.3rem;
+	
+}
+.goods-font div:nth-child(3){
+	margin-left:0.5rem;
+	
+}
+.goods-font div:last-child{
+	margin-left:1.1rem;
+	
+}
+.goods-font2{
+	width:4.3rem;
+	margin-left:0.6rem;
+	margin-top:-0.1rem;
+	border-radius:2%;
+}
+.dibu-tu{
+	width:4.9rem;
+	height:2.16rem;
+	background-image: url(https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0d1ffaea355ab590ee88a48c9ab1ef0f.jpg?f=webp);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	float: left;
+}
+

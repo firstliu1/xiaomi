@@ -1,0 +1,154 @@
+.body{
+	width: 10rem;
+	height: 102vh;
+	margin: 0 auto;
+	position: relative;
+	background-color: #f5f5f5;
+}
+a{
+	color:black;
+}
+.header{
+	width:10rem;
+	height:2.213333rem;
+	background-color: #f37d0f;
+	background-image: url(https://m.mi.com/static/img/bg.63c8e19851.png);
+}
+.headerimg{
+	width:1.173333rem;
+	height: 1.173333rem;
+	background-image:url(https://m.mi.com/static/img/avatar.76a75b8f17.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	border:5px solid goldenrod;
+	float: left;
+	margin-top:4.5%;
+	margin-left:4.5%;
+	border-radius:50%;
+}
+.header div:last-child{
+	width:1.5rem;
+	height: 1.333333rem;
+	text-align: center;
+	margin-top:9%;
+	margin-left:2%;
+	font-size: 0.330666rem;
+	color: white;
+	float: left;
+}
+.mydingdan{
+	background-color: white;
+	width:100%;
+	height: 1.093333rem;
+	border-bottom:1px solid gainsboro;
+	line-height:1.1rem;
+}
+.mydingdan span:first-child{
+	font-size:0.359rem;
+	margin-left:-3rem;
+	
+}
+.mydingdan span:nth-child(2){
+	font-size: 0.333333rem;
+	float: right;
+	margin-right:1rem;
+}
+.jiantou{
+	width: 0.25rem;
+	height: 0.25rem;
+	border-right:2px solid black;
+	border-bottom: 2px solid black;
+	float: right;
+	transform: rotate(-45deg);
+	margin-top:0.45rem;
+	margin-right:-1.8rem;
+}
+.fk{
+	width: 10rem;
+	height:2.346666rem;
+	background-color: white;
+	font-size: 0.32rem;
+	text-align: center;
+	line-height:0rem;
+}
+.fk div{
+	width:29%;
+	height:100%;
+	float: left;
+	border: 0px solid red;
+	margin-left: 0.25rem;
+}
+.fk-f div:nth-child(1){
+	width: 0.666666rem;
+	height: 0.666666rem;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyppVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTMyIDc5LjE1OTI4NCwgMjAxNi8wNC8xOS0xMzoxMzo0MCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUuNSAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpGMUQ5NDYxMThGQTkxMUU2OTNFMENEREQ1RkNGRDZCQyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpGMUQ5NDYxMjhGQTkxMUU2OTNFMENEREQ1RkNGRDZCQyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkYxRDk0NjBGOEZBOTExRTY5M0UwQ0RERDVGQ0ZENkJDIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkYxRDk0NjEwOEZBOTExRTY5M0UwQ0RERDVGQ0ZENkJDIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+0LK+9gAAAXNJREFUeNrsnLEOgjAURcUYd/k/Rhh1My7+gJsrYeP7xNHEpXZoIjYIpQnwaM9N3qBLw8nr7ePWmCilNui/tiAAEIAABCAAAQhAkWrX/lCWZXQAiqIY3UF7XXddD10qwGrM8+1Hd5DRTdcx4KY5mOd76br4eFAWye7KfU06jQRQ6rvFbCUBQRkdXXDMAwhAAAIQgAAEIAAh70k6aNkRjx1/SOugqaOWrleP3vhDWgctEbX0xh/SOmjJqCVfg0mn0taWbtJTRy2D8QfHPIAABKCBeWnUNU4sk7Q9Lzlf48TSQZnrHIMH4UGdqju+q/Cgr85miMxawK4A+uqt62SKLYYHAWi9ku5Big76VSNtbWmA6gXXrtawxdrzzWGmNZ99c5Q0QFPPN7anDSaW0d+L+fwMGAEIQAACEIAABCAAIadJWtFBDq/9AarxBVRHAqjy3WJLRA5zqjfecAE025XKGpTw9zgc8wACEIAABCAAAQh16SPAAD22hrFVOZLnAAAAAElFTkSuQmCC);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	margin: 17% 39%;
+}
+.huiyuan{
+	margin-top:0.266666rem;
+	width:100%;
+	height: 1.44rem;
+	background-color: white;
+	text-align: left;
+	line-height:1.5rem;
+	font-size:0.389333rem;
+}
+.huiyuan div:nth-child(1){
+	width: 1.013333rem;
+	height: 1.013333rem;
+	background-image: url(../img/会员中心.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	margin:0.25rem 0.533333rem;
+	float: left;
+}
+.huiyuan div:nth-child(2){
+	width:79.2%;
+	height: 100%;
+	float: left;
+	border-bottom:1px solid gainsboro;
+}
+.huiyuan div:nth-child(3){
+	width: 0.25rem;
+	height: 0.25rem;
+	border-right:2px solid black;
+	border-bottom: 2px solid black;
+	float: left;
+	transform: rotate(-45deg);
+	margin-left:-0.86rem;
+	margin-top: 0.533333rem;
+}
+.huiyuan2{
+	width:100%;
+	height: 1.44rem;
+	background-color: white;
+	text-align: left;
+	line-height:1.5rem;
+	font-size:0.389333rem;
+}
+.huiyuan2 div:nth-child(1){
+	width: 1.013333rem;
+	height: 1.013333rem;
+	background-image: url(../img/会员中心.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	margin:0.25rem -9.5rem;
+	float: left;
+}
+.huiyuan2 div:nth-child(2){
+	width:79.2%;
+	height: 100%;
+	float: left;
+}
+.huiyuan2 div:nth-child(3){
+	width: 0.25rem;
+	height: 0.25rem;
+	border-right:2px solid black;
+	border-bottom: 2px solid black;
+	float: left;
+	transform: rotate(-45deg);
+	margin-left:-0.86rem;
+	margin-top: 0.533333rem;
+}

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport"
+			content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script src="../js/flexible.js"></script>
+		<title>搜索商品</title>
+		<link rel="shortcut icon" href="https://s02.mifile.cn/assets/static/image/logo-mi2.png" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="../css/public.css" />
+		<link rel="stylesheet" type="text/css" href="../css/sousuo.css" />
+		<script type="text/javascript" src="../js/jquery.js"></script>
+	</head>
+	<body>
+		<div class="body">
+			<div class="zhezhao"></div>
+			<div class="header">
+				<div class="header-fanhui" onclick="tiao(1)"></div>
+				<input placeholder="搜索商品名称" />
+				<div class="header-sousuo"></div>
+			</div>
+			<!-- 条件筛选 -->
+			<div class="saixuan">
+				<div>综合</div>
+				<div>限量</div>
+				<div>价格<i class="icon icon-down"></i><i class="icon icon-up"></i></div>
+				<div>筛选</div>
+			</div>
+			<div class="saixuan-zh">
+				<div class="zh-px">综合排序
+					<img class="zh-icon"
+						src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAYCAYAAACSuF9OAAAAAXNSR0IArs4c6QAAAWJJREFUSA3F1r9KxEAQBvBvAmoh9wD2Vr6C+gTXWSgi2OoJNqKdwnFvYOc9wjV2YqGFnaWF7fVqKXYirt/cwZIjidlshs1A/uxmd+dHsptE0HG4AS7gcEbGM5awL1163DFGxFx5Q4bdzBcSnxQwgl/ipp2AChiQApzIDV6SP7JSjGBAzFgfUlJQHSYpKASTDBSKUZCf1O4cq1phHU0wmlvcKVbwjUeeb3GbYA2HMmSNQTTFaMoMP9jmUTEae3jDrRtieV6M38dgNFvG1K88fuZS99uiYjEzkFzjg4u/z8KXBaoNRvP79xAH2uT78p51vRzsjnNqJ3ROtcUsgLTQBmWBKYBiUVaYUlBTlCWmEhSKssb8C6pD4R2XCz9X+guR+2pr/5jwq6yqM+9CcfUJpky/nutjgtHxakHaqBSlF+ZhhtHhgkDasAJlimkEKkGZYxqDZqgjbPC+HnAOPckYD1pnGX+3u8d2kq5oywAAAABJRU5ErkJggg==" />
+				</div>
+				<div class="xp-yx">新品优先
+					<img class="xp-icon"
+						src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAYCAYAAACSuF9OAAAAAXNSR0IArs4c6QAAAWJJREFUSA3F1r9KxEAQBvBvAmoh9wD2Vr6C+gTXWSgi2OoJNqKdwnFvYOc9wjV2YqGFnaWF7fVqKXYirt/cwZIjidlshs1A/uxmd+dHsptE0HG4AS7gcEbGM5awL1163DFGxFx5Q4bdzBcSnxQwgl/ipp2AChiQApzIDV6SP7JSjGBAzFgfUlJQHSYpKASTDBSKUZCf1O4cq1phHU0wmlvcKVbwjUeeb3GbYA2HMmSNQTTFaMoMP9jmUTEae3jDrRtieV6M38dgNFvG1K88fuZS99uiYjEzkFzjg4u/z8KXBaoNRvP79xAH2uT78p51vRzsjnNqJ3ROtcUsgLTQBmWBKYBiUVaYUlBTlCWmEhSKssb8C6pD4R2XCz9X+guR+2pr/5jwq6yqM+9CcfUJpky/nutjgtHxakHaqBSlF+ZhhtHhgkDasAJlimkEKkGZYxqDZqgjbPC+HnAOPckYD1pnGX+3u8d2kq5oywAAAABJRU5ErkJggg==" />
+				</div>
+			</div>
+			<div class="zhezhao2"></div>
+			<div class="saixuan-fenlei">
+				<div class="fenlei-fl">分类</div>
+				<div>
+					<span>推荐</span>
+					<span>Xiaomi手机</span>
+					<span>Redmi手机</span>
+					<span>游戏手机</span>
+					<span>电脑平板</span>
+					<span>智能穿戴</span>
+					<span>Xiaomi手机</span>
+					<span>Redmi手机</span>
+					<span>游戏手机</span>
+					<span>电脑平板</span>
+					<span>智能穿戴</span>
+					<span>Xiaomi手机</span>
+					<span>Redmi手机</span>
+					<span>游戏手机</span>
+					<span>电脑平板</span>
+					<span>智能穿戴</span>
+					<span>Xiaomi手机</span>
+					<span>Redmi手机</span>
+				</div>
+				<div class="fenlei-db">
+					<span>重置</span>
+					<span>确定</span>
+				</div>
+			</div>
+			<div class="xiaheng">
+				<div class="fenlei">
+					<div>
+						<img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/2768f0ffc7d8dd66e5c58c9062898338.png" />
+						<span>小米手机</span>
+					</div>
+					<div>
+						<img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/2768f0ffc7d8dd66e5c58c9062898338.png" />
+						<span>小米手机</span>
+					</div>
+					<div>
+						<img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/2768f0ffc7d8dd66e5c58c9062898338.png" />
+						<span>小米手机</span>
+					</div>
+					<div>
+						<img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/2768f0ffc7d8dd66e5c58c9062898338.png" />
+						<span>小米手机</span>
+					</div>
+					<div>
+						<img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/2768f0ffc7d8dd66e5c58c9062898338.png" />
+						<span>小米手机</span>
+					</div>
+					<div>
+						<img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/2768f0ffc7d8dd66e5c58c9062898338.png" />
+						<span>小米手机</span>
+					</div>
+					<div>
+						<img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/2768f0ffc7d8dd66e5c58c9062898338.png" />
+						<span>小米手机</span>
+					</div>
+					<div>
+						<img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/2768f0ffc7d8dd66e5c58c9062898338.png" />
+						<span>小米手机</span>
+					</div>
+					<div>
+						<img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/2768f0ffc7d8dd66e5c58c9062898338.png" />
+						<span>小米手机</span>
+					</div>
+				</div>
+				<div class="quanbu-sp">
+					<img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/cb92ee260f1acae1f92e8f130423471a.png" />
+					<div class="sp-xiangqin">
+						<span>小米巨能写中性笔10支装</span>
+						<div class="sp-xq">
+							<span>4倍书写长度</span>
+							<span>日本MIKUNI油墨</span>
+							<span>0.5mm弹簧子弹头</span>
+							<span>不易飞白断墨</span>
+						</div>
+						<span class="fh">￥9.99</span>
+						<span>1477670条评论</span>
+						<span>99.9%满意</span>
+					</div>
+				</div>
+				<div class="quanbu-sp">
+					<img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/cb92ee260f1acae1f92e8f130423471a.png" />
+					<div class="sp-xiangqin">
+						<span>小米巨能写中性笔10支装</span>
+						<div class="sp-xq">
+							<span>4倍书写长度</span>
+							<span>日本MIKUNI油墨</span>
+							<span>0.5mm弹簧子弹头</span>
+							<span>不易飞白断墨</span>
+						</div>
+						<span class="fh">￥9.99</span>
+						<span>1477670条评论</span>
+						<span>99.9%满意</span>
+					</div>
+				</div>
+				<div class="quanbu-sp">
+					<img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/cb92ee260f1acae1f92e8f130423471a.png" />
+					<div class="sp-xiangqin">
+						<span>小米巨能写中性笔10支装</span>
+						<div class="sp-xq">
+							<span>4倍书写长度</span>
+							<span>日本MIKUNI油墨</span>
+							<span>0.5mm弹簧子弹头</span>
+							<span>不易飞白断墨</span>
+						</div>
+						<span class="fh">￥9.99</span>
+						<span>1477670条评论</span>
+						<span>99.9%满意</span>
+					</div>
+				</div>
+				<div class="quanbu-sp">
+					<img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/cb92ee260f1acae1f92e8f130423471a.png" />
+					<div class="sp-xiangqin">
+						<span>小米巨能写中性笔10支装</span>
+						<div class="sp-xq">
+							<span>4倍书写长度</span>
+							<span>日本MIKUNI油墨</span>
+							<span>0.5mm弹簧子弹头</span>
+							<span>不易飞白断墨</span>
+						</div>
+						<span class="fh">￥9.99</span>
+						<span>1477670条评论</span>
+						<span>99.9%满意</span>
+					</div>
+				</div>
+				<div class="quanbu-sp">
+					<img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/cb92ee260f1acae1f92e8f130423471a.png" />
+					<div class="sp-xiangqin">
+						<span>小米巨能写中性笔10支装</span>
+						<div class="sp-xq">
+							<span>4倍书写长度</span>
+							<span>日本MIKUNI油墨</span>
+							<span>0.5mm弹簧子弹头</span>
+							<span>不易飞白断墨</span>
+						</div>
+						<span class="fh">￥9.99</span>
+						<span>1477670条评论</span>
+						<span>99.9%满意</span>
+					</div>
+				</div>
+				<div class="quanbu-sp">
+					<img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/cb92ee260f1acae1f92e8f130423471a.png" />
+					<div class="sp-xiangqin">
+						<span>小米巨能写中性笔10支装</span>
+						<div class="sp-xq">
+							<span>4倍书写长度</span>
+							<span>日本MIKUNI油墨</span>
+							<span>0.5mm弹簧子弹头</span>
+							<span>不易飞白断墨</span>
+						</div>
+						<span class="fh">￥9.99</span>
+						<span>1477670条评论</span>
+						<span>99.9%满意</span>
+					</div>
+				</div>
+				<div class="quanbu-sp">
+					<img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/cb92ee260f1acae1f92e8f130423471a.png" />
+					<div class="sp-xiangqin">
+						<span>小米巨能写中性笔10支装</span>
+						<div class="sp-xq">
+							<span>4倍书写长度</span>
+							<span>日本MIKUNI油墨</span>
+							<span>0.5mm弹簧子弹头</span>
+							<span>不易飞白断墨</span>
+						</div>
+						<span class="fh">￥9.99</span>
+						<span>1477670条评论</span>
+						<span>99.9%满意</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="../js/sousuo.js">
+		</script>
+	</body>
+</html>
